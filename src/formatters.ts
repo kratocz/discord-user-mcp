@@ -33,7 +33,7 @@ export function displayName(user: User): string {
 
 function formatAttachment(a: Attachment): string {
   const sizeMB = (a.size / (1024 * 1024)).toFixed(1);
-  return `[file: ${a.filename}, ${sizeMB}MB]`;
+  return `[file: ${a.filename}, ${sizeMB}MB, url: ${a.url}]`;
 }
 
 function formatEmbed(e: Embed): string {
